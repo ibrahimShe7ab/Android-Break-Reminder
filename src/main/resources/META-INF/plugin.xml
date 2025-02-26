@@ -1,0 +1,38 @@
+<idea-plugin>
+    <id>com.ibrahimShe7ab.remember.android</id>
+    <name>Android Break Reminder</name>
+
+    <vendor
+            email="support@ibrahimshe7ab.com"
+            url="https://ibrahimshe7ab.com">
+        Ibrahim Shehab Eldin
+    </vendor>
+
+    <version>1.0.0</version>
+    <idea-version since-build="211"/>
+
+    <category>Productivity</category>
+
+    <description><![CDATA[
+        <h3>🛑 مساعد تذكير بأوقات الراحة</h3>
+        <p>يساعد المطورين على أخذ فترات راحة منتظمة للحفاظ على الإنتاجية والصحة.</p>
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="Break Reminder Notifications" displayType="STICKY_BALLOON"/>
+    </extensions>
+
+    <actions>
+        <action
+                id="ShowBreakReminderPopup"
+                class="org.example.MyRememberPlugin"
+                text="🔔 تذكير بأخذ استراحة"
+                description="يعرض تنبيهًا لأخذ استراحة">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
