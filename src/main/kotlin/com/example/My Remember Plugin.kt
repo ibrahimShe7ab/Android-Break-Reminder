@@ -21,7 +21,7 @@ class MyRememberPlugin : AnAction() {
         } else {
             startReminder()
             showNotification("✅ تم تفعيل تذكير الاستراحة كل ساعتين استعن بالله و لا تعجز .  صلِّ على الرسول ﷺ", NotificationType.INFORMATION)
-            playSound("sound.wav") // تشغيل الصوت عند التفعيل
+            playSound("sound.wav")
         }
     }
 
